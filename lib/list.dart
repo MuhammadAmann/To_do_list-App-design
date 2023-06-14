@@ -17,30 +17,23 @@ class _To_dolistState extends State<To_dolist> {
 
   //Create a empty list(array) to take input from user and store/add in new section
 
-   List t = List.empty(growable: true);
-   List st = List.empty(growable: true);
-
   List title = [
-    'Abdul Manan',
-    'Shehzad warraich',
-    'Wasi ahmed',
-    'adheer ahmed',
-    'Abu Bakar',
-    'Ali Abdullah',
-    'Suleman',
-    'Ch hamza',
-    'Zeeshan gujjer'
+    'John Smith',
+    'Emily Johnson',
+    'Michael Davis',
+    'Sarah Thompson',
+    'David Wilson',
+    'Olivia Anderson',
+    'James Brown'
   ];
   List sub = [
-    'CA inter, Lawyer',
-    'Software Eng',
-    'CA Inter + Trainee',
-    'janum',
-    'Mobile App Developer',
-    'MBBS final Year Student',
-    'Laywer Stduent',
-    'Property Agent',
-    'BS English Student'
+    'Daily Tasks',
+    'Project Action Items',
+    'Errands and Chores',
+    'Weekly Priorities',
+    'Personal Goals',
+    'Work Assignments',
+    'Home To-Do List'
   ];
 
   int selectedindex = -1;
@@ -442,10 +435,10 @@ class _To_dolistState extends State<To_dolist> {
                               //Use 'Setstate((){})' to update he List on screen output on screen
                               String titleee = titlecontroller.text;
                               String subtitleee = subtitlecontroller.text;
-                              
+
                               if (title.isNotEmpty && sub.isNotEmpty) {
                                 setState(() {
-                                   titlecontroller.text = '';
+                                  titlecontroller.text = '';
                                   subtitlecontroller.text = '';
 
                                   title[selectedindex] = titleee;
